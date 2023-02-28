@@ -1,0 +1,131 @@
+@font-face {
+    font-family: lastresort;
+    src: url(Images/Gothic\ Outline\ Title\ D\ OT\ Regular.otf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: lastresort;  
+}
+
+.homescreen video{
+    position: absolute;
+    display: flex;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+.img img{
+    margin-bottom: 25px;
+    margin-right: 10px;
+    box-sizing: content-box;
+    height: 40px;
+}
+.img .logotext{
+    color: white;
+    font-size: 40px;
+}
+
+.img .logotext p{
+    font-size: 20px;
+}
+.img .logotext h2{
+    height: 70px;
+}
+
+.points{
+    display: flex;
+    color: aliceblue;
+    flex-direction: row;
+    max-width: 300px;
+    align-items: center;
+    height: 30px;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-right: 70px;
+}
+
+.points h2{
+    display: flex;
+    align-items: center;
+}
+.points h2 p{
+    font-size: 50px;
+    margin-top: 3vh;
+    margin-right: 5px;
+}
+
+.nav{
+    width: 400px;
+}
+.nav li{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin:30px 40px;
+    cursor: pointer;
+}
+
+.nav li:hover{
+    transition: 0.3s transform ease-in-out;
+    transform: scale(1.1);
+}
+
+.friendlist{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    background-color: black;
+    height: 100vh;
+    width: 50px;
+    transition: 0.5s;
+    justify-content: space-around;
+}
+
+.friendlist:hover{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    background-color: black;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.friendlist:hover .friend1 h4{
+    display: block;
+    color: aliceblue;
+}
+.friend1{
+    display: flex;
+    left: 0;
+    flex-direction: row;
+    max-height: 50px;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgb(32, 32, 32);
+}
+
+.friend1 h4{
+    display: none;
+    margin-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
